@@ -109,12 +109,230 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 
 ==========================================CODEWARS==========================================
-// 8 kyu Student's Final Grade
+
+
+7 kyu Password validator
+
+function password(str) {
+if (str.length < 8) return false;
+  if (!str.match(/[a-z]/)) return false;
+  if (!str.match(/[A-Z]/)) return false;
+  if (!str.match(/[0-9]/)) return false;
+
+  return true;
+}
+
+8 kyu Exclamation marks series #1: Remove an exclamation mark from the end of string
+
+function remove (string) {
+  
+  return string.endsWith('!') ? string.slice(0, -1) : string;
+}
+
+8 kyu You only need one - Beginner
+
+function check(a, x) {
+ return a.includes(x)
+}
+
+8 kyu Lario and Muigi Pipe Problem
+
+function pipeFix(numbers){
+  let arr = [];
+  for ( i = numbers[0]; i <= numbers[numbers.length -1]; i++){
+    arr.push(i)
+  }
+return arr
+}
+
+8 kyu Enumerable Magic #1 - True for All?
+
+function all( arr, fun ){
+  return arr.every(fun)
+}
+
+8 kyu Grasshopper - Debug sayHello
+
+function sayHello(name) {
+  return `Hello, ${name}`
+}
+
+8 kyu Enumerable Magic - Does My List Include This?
+
+function include(arr, item){
+ return arr.includes(item)
+}
+
+8 kyu Reverse List Order
+
+function reverseList(list) {
+return list.reverse()
+}
+
+8 kyu How many lightsabers do you own?
+
+function howManyLightsabersDoYouOwn(name) {
+  return name === 'Zach' ? 18 : 0
+}
+
+7 kyu Fix string case
+
+function solve(s){
+let up = 0;
+let low = 0;
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === s[i].toUpperCase() ){
+      up++
+    } else {
+      low++
+    }
+  }
+  return up > low ? s.toUpperCase() : s.toLowerCase()
+}
+
+8 kyu Alan Partridge II - Apple Turnover
+
+function apple(x){
+return x * x > 1000 ? 'It\'s hotter than the sun!!' : 'Help yourself to a honeycomb Yorkie for the glovebox.'
+}
+
+8 kyu Hex to Decimal
+
+function hexToDec(hexString){
+return parseInt(hexString, 16)
+}
+
+8 kyu A wolf in sheep's clothing
+
+function warnTheSheep(queue) {
+ let rev = queue.reverse()   
+ if (rev[0] === "wolf"){
+ return  "Pls go away and stop eating my sheep"
+ } else {
+   return `Oi! Sheep number ${rev.indexOf("wolf")}! You are about to be eaten by a wolf!`
+ }    
+}
+
+8 kyu Total amount of points
+
+function points(games) {
+  let res = 0
+  games.forEach((i) =>{
+    if (i[0] > i[2]){
+      res += 3
+    }
+    else if (i[0] < i[2]){
+      res += 0
+    } else {
+      res += 1
+    }
+  })
+  
+  return res
+}
+
+8 kyu Find the position!
+
+function position(letter){
+return `Position of alphabet: ${letter.charCodeAt() -96}`
+}
+
+7 kyu Alternate capitalization
+
+function capitalize(s){
+  let resA = s.split('').map((e, i) => i % 2 === 0 ? e.toUpperCase() : e ).join('');
+  let resB = s.split('').map((e, i) => i % 2 !== 0 ? e.toUpperCase() : e).join('');
+   
+   return [resA, resB]                   
+  };
+
+8 kyu Grasshopper - Terminal game combat function
+
+function combat(health, damage) {
+  return  health - damage < 0 ? 0 : health - damage
+}
+
+6 kyu Count the smiley faces!
+
+
+function countSmileys(arr) {
+  let res = []
+  for (let i =0; i < arr.length; i++){
+    if (arr[i] == ':)' 
+        || arr[i] == ':D' 
+        || arr[i] == ';)' 
+        || arr[i] == ':-)' 
+        || arr[i] == ';D' 
+        || arr[i] == ':-D' 
+        || arr[i] == ';-D' 
+        || arr[i] == ':~D' 
+        || arr[i] == ':~)'
+        || arr[i] == ';~D' 
+        || arr[i] == ';~)' 
+        || arr[i] == ';-)') {
+      res.push(i)
+    }
+  }
+return res.length
+}
+
+8 kyu N-th Power
+
+function index(array, n){
+ return  n >= array.length ? -1 : array[n] ** n
+}
+
+8 kyu No zeros for heros
+
+function noBoringZeros(n) {
+  n = String(n)
+  while ( n.endsWith(0)){
+   n = n.slice(0, -1)
+  }
+return +n
+}
+
+8 kyu Enumerable Magic #25 - Take the First N Elements
+
+function take(arr, n) {
+  return arr.slice(0, n)
+}
+
+8 kyu Hello, Name or World!
+
+const hello = name => !name ? 'Hello, World!' : `Hello, ${name.toLowerCase()[0].toUpperCase() + name.toLowerCase().slice(1)}!`
+
+8 kyu Bin to Decimal
+
+function binToDec(bin){
+return parseInt(bin, 2)
+}
+
+8 kyu Determine offspring sex based on genes XX and XY chromosomes
+
+function chromosomeCheck(sperm) {
+  return sperm === 'XY' ? "Congratulations! You're going to have a son." : "Congratulations! You're going to have a daughter."
+}
+
+7 kyu The Coupon Code
+
+function checkCoupon(enteredCode, correctCode, currentDate, expirationDate){
+
+  return enteredCode === correctCode && Date.parse(currentDate) <= Date.parse(expirationDate)
+}
+
+7 kyu Count all the sheep on farm in the heights of New Zealand
+
+function lostSheep(friday,saturday,total){
+return total - friday.reduce((a,b)=>a+b, 0) - saturday.reduce((a,b)=>a+b, 0)
+}
+
+8 kyu Student's Final Grade
 
 function finalGrade (exam, projects) {
     if (exam > 90 || projects > 10) {return 100;}
-      if (exam > 75 || projects > 4) {return 90;}
-        if (exam > 50 || projects > 1) {return 75;}
+     else if (exam > 75 && projects > 4) {return 90;}
+      else  if (exam > 50 && projects > 1) {return 75;}
           else {return 0;}
    }
 
