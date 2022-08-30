@@ -110,6 +110,58 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+8 kyu Grasshopper - Array Mean
+
+var findAverage = function (nums) {
+ return nums.reduce((a, b) => a + b)/nums.length
+}
+
+8 kyu Welcome to the City
+
+function sayHello( name, city, state ) {
+  return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
+  
+}
+
+5 kyu Extract the domain name from a URL
+
+function domainName(url){
+  url = url.replace("http://", '')
+   url =  url.replace("https://", '')
+    url =  url.replace("www.", '')
+ return url.split('.')[0]
+}
+
+8 kyu Add Length
+
+function addLength(str) {
+let res = []
+let word = str.split(' ')
+let length = str.split(' ').map(e =>e.length)
+for (let i = 0; i < word.length; i++)
+  res.push(`${word[i]} ${length[i]}`)
+  return res
+}
+
+7 kyu Testing 1-2-3
+
+var number=function(array){
+  return array.map((e, i)=>{
+    return `${i+1}: ${e}`
+    })
+}
+
+7 kyu Count the Characters
+
+function countChar(string, char) {  
+let str = string.toLowerCase() 
+let res =[];
+for ( let i = 0; i < str.length; i++){
+  if (str[i] == char.toLowerCase() )
+ res.push(i)
+}
+  return res.length
+}
 
 7 kyu Password validator
 
