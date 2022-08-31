@@ -110,6 +110,144 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+
+Fundamentals: Return
+
+function add(a,b){
+    return a + b
+}
+
+function divide(a,b){
+    return a / b
+}
+
+function multiply(a,b){
+    return a * b
+}
+
+function mod(a,b){
+    return a % b
+}
+   
+function exponent(a,b){
+    return a ** b
+}
+    
+function subt(a,b){
+    return a - b
+}
+
+6 kyu Array.diff
+
+function arrayDiff(a, b) {
+  
+  return a.filter((i) => !b.includes(i))
+}
+
+8 kyu USD => CNY
+
+function usdcny(usd) {
+  return `${(usd * 6.75).toFixed(2)} Chinese Yuan`
+}
+
+8 kyu Exclamation marks series #2: Remove all exclamation marks from the end of sentence
+
+function remove (string) {  
+
+  return string.replace(/\!+$/, '')
+}
+
+7 kyu Flatten and sort an array
+
+
+function flattenAndSort(array) {
+  
+  return array.flat().sort((a,b)=> a-b)
+}
+
+8 kyu Remove duplicates from list
+
+function distinct(a) {
+return a.filter((e,i) => i === a.indexOf(e));
+
+}
+
+7 kyu Sum of angles
+
+function angle(n) {
+  return (n-2) *180
+}
+
+8 kyu Take the Derivative
+
+function derive(coefficient,exponent) {
+  return `${coefficient * exponent}x^${exponent - 1}`
+}
+
+8 kyu Pre-FizzBuzz Workout #1
+
+function preFizz(n) {
+  let arr = []
+  for (let i = 1; i <= n; i++)
+  arr.push(i)
+return arr
+}
+
+7 kyu Get the Middle Character
+
+function getMiddle(s)
+{
+if( s.length % 2 !== 0) { return s.charAt(s.length/2)}
+if (s.length % 2 === 0) {return `${s.charAt((s.length/2)-1)}${s.charAt(s.length/2)}`}
+}
+
+8 kyu Surface Area and Volume of a Box
+
+const getSize = (width, height, depth) => [2 * width * height + 2 * width * depth  + 2 * height * depth, width * height * depth]
+                                          
+
+7 kyu Sum of numbers from 0 to N
+
+var SequenceSum = (function() {
+  function SequenceSum() {}
+
+  SequenceSum.showSequence = function(count) {
+    
+    let res = 0
+    let out = ''
+    if (count === 0) return '0=0'
+    if (count < 0) return `${count}<0`
+    for (let i = 0; i <= count; i++){
+    if(i == count){
+       out += String(i);
+      }else {
+      out += String(i) + '+';
+      }
+      res = res + i;
+    }
+    return out + ' = ' + res;
+  }
+return SequenceSum
+ ;
+
+})();
+
+8 kyu Grasshopper - Function syntax debugging
+
+function main (verb, noun){
+  return verb + noun
+}
+
+7 kyu Row Weights
+
+const rowWeights = array => [array.filter((e, i)=> i % 2 == 0).reduce((a, b)=> a + b, 0), array.filter((e, i)=> i % 2 !== 0).reduce((a, b)=> a + b, 0)]
+
+8 kyu Holiday VIII - Duty Free
+
+function dutyFree(normPrice, discount, hol){
+return Math.floor(hol / (normPrice * discount / 100))
+}
+
 8 kyu Grasshopper - Array Mean
 
 var findAverage = function (nums) {
