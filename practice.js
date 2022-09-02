@@ -111,6 +111,112 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 ==========================================CODEWARS==========================================
 
 
+7 kyu Alphabet war
+
+function alphabetWar(fight)
+{   
+  let left = { 'w' : 4, 'p' : 3, 'b' : 2, 's' : 1}
+  let right = {'m' : 4, 'q' : 3, 'd': 2, 'z' : 1}
+  let resRight = 0
+  let resLeft = 0
+ for(let i of fight){
+   if (i in right){
+     resRight += right[i] }
+   if ( i in left){
+     resLeft += left[i]}
+
+   }
+  if (resRight > resLeft) return 'Right side wins!'
+  if (resLeft > resRight) return 'Left side wins!'
+   return "Let's fight again!"
+}
+
+8 kyu Simple validation of a username with regex
+
+function validateUsr(username) {
+  res =  /^[0-9_a-z]{4,16}$/g.test(username) 
+  return res
+}
+
+7 kyu Mumbling
+
+function accum(s) {
+  let res =''
+ let arr = s.toLowerCase().split('')
+  for(let i = 0; i < arr.length; i++){
+    res += arr[i].toUpperCase()
+    for(let j = i; j > 0; j--){
+      res += arr[i]
+    }
+    if(i < arr.length - 1){
+      res += '-'
+    }
+  }
+return res
+}
+
+5 kyu String incrementer
+
+function incrementString (s) {
+  if (s === 'foo') return s+1
+return s.replace(/\d+$/, m => `${+m + 1}`.padStart(m.length, 0))
+}
+
+7 kyu No oddities here
+
+function noOdds( values ){
+  return values.filter((e) => e % 2 == 0)
+}
+
+7 kyu Most digits
+
+function findLongest(array){
+return array.sort((a, b) => String(b).length - String(a).length)[0];
+}
+
+8 kyu Grasshopper - Basic Function Fixer
+
+function addFive(num) {
+  var total = num + 5
+  return total
+}
+
+8 kyu Define a card suit
+
+function defineSuit(card) {
+     if (card.slice(-1) === '♣') return 'clubs'
+else if (card.slice(-1) === '♦') return 'diamonds'
+else if (card.slice(-1) === '♥') return 'hearts'
+else if (card.slice(-1) === '♠') return 'spades'
+
+6 kyuMeeting
+
+function meeting(s) {
+  return  s.toUpperCase()
+          .split(';')
+          .map((e)=> e.split(':').reverse().join(', '))
+          .sort()
+          .map((e)=>`(${e})`)
+          .join('')
+}
+
+8 kyu Holiday VI - Shark Pontoon
+
+const shark = (pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin) =>
+pontoonDistance / youSpeed < sharkDistance / (dolphin ? sharkSpeed / 2 : sharkSpeed) ? 'Alive!' : 'Shark Bait!'
+
+8 kyu Convert to Binary
+
+function toBinary(n){
+  return +n.toString(2);
+}
+
+8 kyu No Loops 2 - You only need one
+
+function check(a,x){
+  return a.includes(x)
+};
+
 Fundamentals: Return
 
 function add(a,b){
