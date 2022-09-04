@@ -110,6 +110,76 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+8 kyu A Strange Trip to the Market
+
+function isLockNessMonster(s) {
+  return  /tree fiddy|three fifty|3.50 /.test(s)
+}
+
+8 kyu Counting sheep...
+
+function countSheeps(arrayOfSheep) {
+  return arrayOfSheep.filter((e)=> e=== true).reduce((a, b)=> a+b, 0)
+}
+
+8 kyu Kata Example Twist
+
+// add the value "codewars" to the websites array 1,000 times
+let websites = new Array(1000)
+
+7 kyu Love vs friendship
+
+function wordsToMarks(string){
+  return string.split('').map((e) => e.charCodeAt(e)-96).reduce((a, b) => a + b)
+}
+
+8 kyu Exclamation marks series #4: Remove all exclamation marks from sentence but ensure a exclamation mark at the end of string
+
+function remove (string) {
+  return string.replace(/!/g, '').concat('!')
+}
+
+7 kyu JavaScript Array Filter
+
+function getEvenNumbers(numbersArray){
+ return numbersArray.filter((e) => e % 2 == 0 )
+}
+
+8 kyu Reversed Words
+
+function reverseWords(str){
+  return str.split(' ').reverse().join(' ')
+}
+
+8 kyu Exclamation marks series #11: Replace all vowel to exclamation mark in the sentence
+
+const replace = (s) => s.replace(/[aeiou]/gi, "!")
+
+8 kyu Sleigh Authentication
+
+function Sleigh() {}
+
+Sleigh.prototype.authenticate = function(name, password) {
+return name ==='Santa Claus' && password ==='Ho Ho Ho!'
+};
+
+7 kyu Predict your age!
+
+function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
+  return Math.floor(Math.sqrt(age1*age1+age2*age2+age3*age3+age4*age4+age5*age5+age6*age6+age7*age7+age8*age8)/2)
+}
+
+8 kyu Do you speak "English"?
+
+function spEng(sentence){
+return sentence.toLowerCase().includes('english')
+}
+
+7 kyu Largest pair sum in array
+
+function largestPairSum (numbers) {
+  return numbers.sort((a, b)=> b - a)[0] + numbers.sort((a, b)=> b - a)[1]
+}
 
 7 kyu Alphabet war
 
