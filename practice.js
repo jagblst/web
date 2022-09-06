@@ -110,6 +110,125 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+8 kyu Find the Remainder
+
+const remainder = (n, m) => n > m ? n % m : m % n
+
+6 kyu Data Reverse
+
+function dataReverse(data) {
+let size = 8; 
+let subarray = [];
+for (let i = 0; i < Math.ceil(data.length/size); i++){
+   subarray[i] = data.slice((i*size), (i*size) + size)}
+  return subarray.reverse().flat()
+}
+
+7 kyu Training JS #25: methods of arrayObject---reverse() and sort()
+
+function sortIt(arr){
+return arr.slice().sort((a,b)=>{
+  let countA = arr.filter(v=>v===a).length
+  let countB = arr.filter(v=>v===b).length
+  if (countA===countB){ return b-a}
+  else if (countA>countB) {return 1}
+  else { return -1}
+  })
+}
+
+8 kyu Regexp Basics - is it a digit? 
+
+String.prototype.digit = function() {
+  return /^[0-9]$/g.test(this);
+};
+
+8 kyu Sum of Multiples
+
+function sumMul(n,m){
+  if( n >= m) return 'INVALID'
+  let res = 0
+  for(let i = n; i < m; i+=n)
+   res += i
+ 
+return res
+}
+
+7 kyu Even numbers in an array
+
+function evenNumbers(array, number) {
+ return array.filter((e) => e % 2 == 0).slice(-number)
+ 
+}
+
+8 kyu Grasshopper - Variable Assignment Debug
+
+var a = "dev"
+var b = "Lab"
+var name = a.concat(b)
+
+8 kyu Basic variable assignment
+
+var a = "code";
+var b = "wa.rs";
+var name = a + b;
+
+7 kyu Don't give me five!
+
+function dontGiveMeFive(start, end){
+let count = 0
+  for (let i = start; i <= end; i++){
+    if (!String(i).includes('5'))
+      count++
+}
+  return count
+}
+
+7 kyu Find the vowels
+
+function vowelIndices(word){
+  let vowels = 'aeiouy'
+  let res = [];
+  word = word.toLowerCase().split('').forEach((l, i)=>{
+    if (vowels.includes(l))
+      res.push(i+1)
+  })
+  return res
+}
+
+8 kyu Formatting decimal places #0
+
+function twoDecimalPlaces(n) {
+ return +n.toFixed(2)
+}
+
+8 kyu Find Nearest square number
+
+function nearestSq(n){
+ return Math.pow(Math.round(Math.sqrt(n)), 2)
+}
+
+7 kyu Sorted? yes? no? how?
+
+function isSortedAndHow(array) {
+  if (array.every((x, i)=>i==0 || array[i] < array[i-1])) {return "yes, descending"}
+   else if (array.every((x, i)=>i==0 ||array[i] > array[i-1])) {return "yes, ascending"}
+    else {return 'no'}
+  }
+
+8 kyu Filter out the geese
+
+function gooseFilter (birds) {
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+ return birds.filter((e)=> !geese.includes(e))
+};
+
+8 kyu Training JS #1: create your first JS function and print "Hello World!"
+
+function helloWorld(){
+  const str = 'Hello World!';
+  console.log(str);
+}
+
 8 kyu A Strange Trip to the Market
 
 function isLockNessMonster(s) {
