@@ -110,6 +110,109 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+
+
+7 kyu Sum of the first nth term of Series
+
+function SeriesSum(n)
+{
+return [...Array(n).keys()].reduce((a,c)=> a+ 1/(c*3 +1), 0).toFixed(2)
+
+}
+
+8 kyu The 'if' function
+
+function _if(bool, func1, func2) {
+ Boolean(bool) ? func1() : func2()
+}
+
+7 kyu Maximum Product
+
+function adjacentElementsProduct(array) {
+  let res = []
+  for( let i = 1; i < array.length; i++){
+    res.push(array[i-1] * array[i])
+  }
+  return Math.max(...res)
+}
+
+8 kyu Man in the west
+
+function checkTheBucket(bucket){
+return bucket.includes('gold')
+}
+
+8 kyu Exclamation marks series #6: Remove n exclamation marks in the sentence from left to right
+
+function remove(s,n){
+ for(let i = 0; i < n; i++){
+   s = s.replace(/!/, '')
+ }
+  return s           
+}
+
+7 kyu Bumps in the Road
+
+function bump(x){
+return x.replace(/_/g, '').length <= 15 ? "Woohoo!" : "Car Dead"
+}
+
+8 kyu Is there a vowel in there?
+
+function isVow(a){
+ return a.map(e => 'aeiou'.includes(a = String.fromCharCode(e)) ? a : e)
+}
+
+8 kyu Remove First and Last Character Part Two
+
+const array =(arr) => arr.split(',').slice(1, -1).join(' ') || null
+
+8 kyu String cleaning
+
+function stringClean(s){
+  return s.replace(/\d/g, '')
+}
+
+8 kyu validate code with simple regex
+
+let validateCode = code => /^[123]/.test(code)
+
+5 kyu Regex Password Validation
+
+const REGEXP = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])[A-Za-z0-9]{6,}$/;
+
+8 kyu Sum of differences in array
+
+function sumOfDifferences(arr) {
+ let res = 0
+ let sorted = arr.sort((a, b) => b - a)
+ for (let i = 1; i < sorted.length; i++){
+   res += sorted[i-1] - sorted[i] 
+ }
+    return res
+}
+
+8 kyu Fix your code before the garden dies!
+
+function rainAmount(mm){
+    if (mm < 40) {
+         return `You need to give your plant ${40 - mm}mm of water`
+    }
+   else{
+         return "Your plant has had more than enough water for today!"
+    }
+}
+
+8 kyu If you can't sleep, just count sheep!!
+
+var countSheep = function (num){
+  let count = ``
+  for(let i = 1; i <=num; i++){
+    count += `${i} sheep...`
+  }
+  return count
+}
+
 8 kyu Find the Remainder
 
 const remainder = (n, m) => n > m ? n % m : m % n
