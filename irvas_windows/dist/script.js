@@ -18172,7 +18172,7 @@ var modals = function modals() {
     var div = document.createElement('div');
     div.style.width = '50px';
     div.style.height = '50px';
-    div.style.overflow = 'scroll';
+    div.style.overflowY = 'scroll';
     div.style.visibility = 'hidden';
     document.body.appendChild(div);
     var scrollWidth = div.offsetWidth - div.clientWidth;
