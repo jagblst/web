@@ -954,6 +954,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var modals = function modals() {
+  var btnPressed = false;
+
   function bindModal(triggerSelector, modalSelector, closeSelector) {
     var destroy = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
     var trigger = document.querySelectorAll(triggerSelector),
@@ -966,6 +968,8 @@ var modals = function modals() {
         if (e.target) {
           e.preventDefault();
         }
+
+        btnPressed = true;
 
         if (destroy) {
           item.remove();

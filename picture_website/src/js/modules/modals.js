@@ -1,4 +1,6 @@
 const modals = () => {
+    let btnPressed = false;
+
     function bindModal(triggerSelector, modalSelector, closeSelector, destroy = false) {
         const trigger = document.querySelectorAll(triggerSelector),
             modal = document.querySelector(modalSelector),
@@ -11,6 +13,8 @@ const modals = () => {
                 if (e.target) {
                     e.preventDefault();
                 }
+
+                btnPressed = true;
 
                 if (destroy) {
                     item.remove();
