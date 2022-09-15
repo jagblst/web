@@ -3,6 +3,7 @@ import sliders from "./modules/sliders";
 import forms from "./modules/forms";
 import mask from "./modules/mask";
 import checkNumImputs from "./modules/checkTextInputs";
+import showMorestyles from "./modules/showMoreStyles";
 
 window.addEventListener('DOMContentLoaded', () => {
     'use strict';
@@ -14,4 +15,5 @@ window.addEventListener('DOMContentLoaded', () => {
     mask('[name="phone"]');
     checkNumImputs('[name="name"]');
     checkNumImputs('[name="message"]');
+    showMorestyles('.button-styles', '.styles-2');
 });
