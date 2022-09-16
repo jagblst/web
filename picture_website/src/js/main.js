@@ -15,5 +15,5 @@ window.addEventListener('DOMContentLoaded', () => {
     mask('[name="phone"]');
     checkNumImputs('[name="name"]');
     checkNumImputs('[name="message"]');
-    showMorestyles('.button-styles', '.styles-2');
+    showMorestyles('.button-styles', '#styles .row');
 });
