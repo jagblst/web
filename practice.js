@@ -112,6 +112,122 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 
 
+8 kyu How old will I be in 2099?
+
+function  calculateAge(a, b) {
+  let res = Math.abs(b - a)
+  if (a > b && res == 1) return `You will be born in ${res} year.`;
+  else if (a < b && res == 1) return `You are ${res} year old.`
+  else if (a > b && res != 1) return `You will be born in ${res} years.`;
+  else if (a < b && res != 1) return `You are ${res} years old.`;
+  else  return `You were born this very year!`
+}
+
+8 kyu Regex count lowercase letters
+
+function lowercaseCount(str){
+  return str.replace(/[^a-z]/g, '').length
+}
+
+8 kyu L1: Bartender, drinks!
+
+function getDrinkByProfession(param){
+  switch (param.toLowerCase()){
+    case "jabroni" : return "Patron Tequila"
+    case "school counselor" : return  "Anything with Alcohol"
+    case "programmer" : return  "Hipster Craft Beer"
+    case "bike gang member" : return  "Moonshine"
+    case "politician" : return  "Your tax dollars"
+    case "rapper" : return  "Cristal"
+    default : return "Beer"
+  }     
+}
+
+8 kyu Return the day
+
+function whatday(num) { 
+  switch (num) {
+    case 1 : return "Sunday";
+    case 2 : return "Monday";
+    case 3 : return "Tuesday";
+    case 4 : return "Wednesday";
+    case 5 : return "Thursday";
+    case 6 : return "Friday";
+    case 7 : return "Saturday";
+    default : return "Wrong, please enter a number between 1 and 7";
+  }
+}
+
+8 kyu Leonardo Dicaprio and Oscars
+
+function leo(oscar){
+if (oscar == 88) return "Leo finally won the oscar! Leo is happy"
+if (oscar == 86) return "Not even for Wolf of wallstreet?!"
+if (oscar !== 88 && oscar !== 86 && oscar < 88) return "When will you give Leo an Oscar?"
+if (oscar > 88) return "Leo got one already!"
+}
+
+8 kyu Grasshopper - Combine strings
+
+const combineNames = (firstName, lastName) => firstName + ' ' + lastName
+
+8 kyu For UFC Fans (Total Beginners): Conor McGregor vs George Saint Pierre
+
+var quote = function(fighter) {
+  return fighter.toLowerCase() == 'conor mcgregor' ? 
+    "I'd like to take this chance to apologize.. To absolutely NOBODY!" :
+    "I am not impressed by your performance."
+};
+
+8 kyu How many stairs will Suzuki climb in 20 years?
+
+function stairsIn20(s){
+  return (s.flat().reduce((a, b) => a + b)) * 20
+}
+
+8 kyu Printing Array elements with Comma delimiters
+
+function printArray(array){
+return array.join(',')
+}
+
+7 kyu Power of two
+
+function isPowerOfTwo(n){
+
+  return !!n && (n & (n - 1)) == 0;
+}
+
+8 kyu Find out whether the shape is a cube
+
+var cubeChecker = function(volume, side){
+  return side > 0  ? volume === side * side * side : false;
+};
+
+8 kyu Who is going to pay for the wall?
+
+function whoIsPaying(name){
+return name.length > 2 ? [name, name.slice(0, 2)] : [name]
+}
+
+8 kyu Get number from string
+
+function getNumberFromString(s) {
+  return +s.replace(/\D/gi, '');
+}
+
+7 kyu Greet Me
+
+var greet = function(name) {
+  return `Hello ${name[0].toUpperCase()}${name.toLowerCase().slice(1)}!`
+};
+
+8 kyu Price of Mangoes
+
+function mango(quantity, price){
+return (quantity - Math.floor(quantity / 3)) * price
+}
+
 7 kyu Sum of the first nth term of Series
 
 function SeriesSum(n)
