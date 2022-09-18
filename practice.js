@@ -111,6 +111,41 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 ==========================================CODEWARS==========================================
 
 
+8 kyu Name on billboard
+
+function billboard(name, price = 30){
+return name.split('').fill(price).reduce((a, b)=> a + b)
+} 
+
+8 kyu Tip Calculator
+
+function calculateTip(amount, rating) {
+  switch(rating.toLowerCase()){
+    case 'terrible': return 0
+    case 'poor': return Math.ceil(amount * 0.05)
+    case 'good': return Math.ceil(amount * 0.1)
+    case 'great': return Math.ceil(amount * 0.15)
+    case 'excellent': return Math.ceil(amount * 0.2)
+    default: return 'Rating not recognised'
+  }
+}
+
+8 kyu Array plus array
+
+function arrayPlusArray(arr1, arr2) {
+  return arr1.concat(arr2).reduce((a, b) => a + b); 
+}
+
+7 kyu Switcheroo
+
+function switcheroo(x){
+return x.replace(/[ab]/g, i => i === 'a' ? 'b' : 'a')
+}
+
+8 kyu Duck Duck Goose
+
+function duckDuckGoose(players, goose) {
+  return players[(goose - 1) % players.length].name
 
 8 kyu How old will I be in 2099?
 
