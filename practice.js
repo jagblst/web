@@ -110,6 +110,32 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+8 kyu Basic Training: Add item to an Array
+
+// add the value "codewars" to the already defined websites array
+websites.unshift('codewars')
+
+8 kyu CSV representation of array
+
+function toCsvText(array) {
+   return array.join('\n')
+}
+
+7 kyu Gauß needs help! (Sums of a lot of numbers).
+
+const f = (n) => n === Number.parseInt(n) && n > 0 ? Array.from({ length: n + 1 }, (v, k) => k).reduce((p, n) => p + n) : false
+
+7 kyu Sort the Gift Code
+
+function sortGiftCode(code){
+return code.split('').sort().join('')
+}
+
+8 kyu Contamination #1 -String-
+
+function contamination(text, char){
+ return text.replace(/./g, char)
+}
 
 8 kyu Name on billboard
 
