@@ -110,6 +110,63 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+
+8 kyu Palindrome Strings
+
+function isPalindrome(line) {
+  return line === line.split('').reverse().join('');
+}
+
+7 kyu Convert an array of strings to array of numbers
+
+function toNumberArray(stringarray){
+  return stringarray.map(e => +e)
+}
+
+7 kyu Maximum Length Difference
+
+function mxdiflg(a1, a2) {
+  let x = a1.map((e)=> e.length)
+  let y = a2.map((e) => e.length)
+ return a1.length == 0 || a2.length == 0 ? -1 :
+      Math.max(...y) - Math.min(...x) > Math.max(...x) - Math.min(...y) ? 
+      Math.max(...y) - Math.min(...x) :
+      Math.max(...x) - Math.min(...y)
+}
+
+8 kyu Multiple of index
+
+function multipleOfIndex(array) {
+return array.filter((a, b) => a % b === 0)
+}
+
+8 kyu simple calculator
+
+function calculator(a,b,sign){
+ if (a !== +a || b !== +b) return "unknown value"  
+switch(sign){
+    case "+" : return a + b;
+    case "-" : return a - b;
+    case "*" : return a * b;
+    case "/" : return a / b;
+    default : return "unknown value"
+    }
+}
+
+8 kyu Basic subclasses - Adam and Eve
+
+class God{
+  static create(){
+       let array = new Array();
+    array.push(new Man());
+    array.push(new Woman());
+    return array;
+  }
+}
+  class Human{};
+  class Man extends Human{};
+  class Woman extends Human{};
+
 8 kyu Basic Training: Add item to an Array
 
 // add the value "codewars" to the already defined websites array
