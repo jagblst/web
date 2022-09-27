@@ -40,7 +40,7 @@ export default class MainSlider extends Slider {
     }
 
     render() {
-        try {
+        if (this.container) {
             try{
                 this.hanson = document.querySelector('.hanson');
             } catch(e){}
@@ -58,6 +58,18 @@ export default class MainSlider extends Slider {
             });
     
             this.showSlides(this.slideIndex);
-        } catch(e){}
+
+            document.querySelectorAll('.prevmodule').forEach(item => {
+                item.addEventListener('click', () => {
+                    this.plusSlides(-1);
+                });
+            });
+
+            document.querySelectorAll('.nextmodule').forEach(item => {
+                item.addEventListener('click', () => {
+                    this.plusSlides(1);
+                });
+            });
+        }
     }
 }
