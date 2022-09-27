@@ -57,6 +57,7 @@ export default class MiniSlider  extends Slider {
     }
 
     init() {
+      try {
         this.container.style.cssText = `
         display: flex;
         flex-wrap: wrap;
@@ -70,5 +71,6 @@ export default class MiniSlider  extends Slider {
         if (this.autoplay) {
             setInterval(() => this.nextSlide(), 5000);
         }
+      } catch(e){}
     }
 }
