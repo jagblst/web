@@ -5433,24 +5433,32 @@ function () {
     value: function bindTriggers() {
       var _this = this;
 
-      this.btns.forEach(function (btn) {
+      this.btns.forEach(function (btn, i) {
+        var blockedElem = btn.closest('.module__video-item').nextElementSibling;
+
+        if (i % 2 == 0) {
+          blockedElem.setAttribute('data-disabled', 'true');
+        }
+
         btn.addEventListener('click', function () {
-          _this.activeBtn = btn;
+          if (btn.closest('.module__video-item').getAttribute('data-disabled') !== 'true') {
+            _this.activeBtn = btn;
 
-          if (document.querySelector('iframe#frame')) {
-            _this.overlay.style.display = 'flex';
+            if (document.querySelector('iframe#frame')) {
+              _this.overlay.style.display = 'flex';
 
-            if (_this.path !== btn.getAttribute('data-url')) {
+              if (_this.path !== btn.getAttribute('data-url')) {
+                _this.path = btn.getAttribute('data-url');
+
+                _this.player.loadVideoById({
+                  videoId: _this.path
+                });
+              }
+            } else {
               _this.path = btn.getAttribute('data-url');
 
-              _this.player.loadVideoById({
-                videoId: _this.path
-              });
+              _this.createPlayer(_this.path);
             }
-          } else {
-            _this.path = btn.getAttribute('data-url');
-
-            _this.createPlayer(_this.path);
           }
         });
       });
