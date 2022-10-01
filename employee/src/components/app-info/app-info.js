@@ -1,8 +1,8 @@
-import './app-info.css';
+import "./app-info.css";
 
 const AppInfo = () => {
     return (
-        <div>
+        <div className="app-info">
             <h1>Облік співробітників компанії</h1>
             <h2>Загальна кількість співробітників: </h2>
             <h2>Премію отримають:</h2>
