@@ -110,6 +110,40 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+7 kyu Balanced Number (Special Numbers Series #1 )
+
+function balancedNum(number)
+{ number = number.toString()
+    let left = 0;
+    let right = 0;
+      for (let i = 0; i < number.length / 2 - 1; i++){
+        left += +number[i] ;
+        right += +(number[number.length - 1 - i]) 
+      }         
+   return left == right ? "Balanced" : "Not Balanced";
+}
+
+7 kyu Divide and Conquer
+
+function divCon(x){
+  let num = (x.filter(e => e === Number(e)).reduce((a,b) => a + b, 0)) 
+  let str = (x.filter(e => e === String(e)).reduce((a,b)=> +a + +b, 0))
+return num - str
+
+}
+
+7 kyu shorter concat [reverse longer]
+
+function shorter_reverse_longer(a,b){
+  return  a.length >= b.length ? b + a.split('').reverse().join('') + b : a + b.split('').reverse().join('') + a
+}
+
+8 kyu Pillars
+
+function pillars(numPill, dist, width) {
+  return numPill > 1 ? (numPill - 1) * dist * 100  + (numPill - 2) * width : 0
+}
+
 
 8 kyu Palindrome Strings
 
