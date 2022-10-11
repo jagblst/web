@@ -8,6 +8,7 @@ class WhoAmI extends Component {
       years: 27,
       position: ''
     }
+    // this.nextYear = this.nextYear.bind(this);
   }
 
   nextYear = () => {
@@ -16,7 +17,8 @@ class WhoAmI extends Component {
     }))
   }
 
-  comitInputChanges = (e) => {
+  comitInputChanges = (e, color) => {
+    console.log(color);
     this.setState({
       position: e.target.value
     })
@@ -35,7 +37,7 @@ class WhoAmI extends Component {
         <a href={link}>My profile</a>
         <form>
             <span>Введіть посаду</span>
-            <input type="text" onChange={this.comitInputChanges} />
+            <input type="text" onChange={(e) => this.comitInputChanges(e, 'some color')} />
         </form>
       </div>
     )
