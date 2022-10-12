@@ -26,8 +26,8 @@ class EmployeesListItem extends Component{
 
     render() {
         const {name, salary, onDelete} = this.props;
-        const {increase} = this.state;
-        const {like} = this.state;
+        const {increase, like} = this.state;
+       
         let classNames = "list-group-item d-flex justify-content-between";
         if (increase) {
             classNames += ' increase';
@@ -35,8 +35,6 @@ class EmployeesListItem extends Component{
         if (like) {
             classNames += ' like';
         }
-
-        
       
         return (
             <li className={classNames}>
