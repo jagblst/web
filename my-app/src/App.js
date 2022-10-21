@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
-import styled from 'styled-components'
+import styled from 'styled-components';
+import BootstrapTest from './BootstrapTest';
 import './App.css';
 
 const EmpItem = styled.div`
@@ -132,10 +133,21 @@ const DynamicGreating = (props) => {
 function App() {
   return (
     <Wrapper>
-      <DynamicGreating color={'primary'}>
-            <h2>This weel was hard</h2>
-            <h2>Hello World!</h2>
-      </DynamicGreating>
+      
+      <BootstrapTest
+          left = {
+            <DynamicGreating color={'primary'}>
+              <h2>This weel was hard</h2>
+              <h2>Hello World!</h2>
+            </DynamicGreating>
+          }
+          right = {
+            <DynamicGreating color={'primary'}>
+              <h2>Right</h2>
+            </DynamicGreating>
+          }
+      />
+
       <WhoAmI name="John" surname="Smith" link="facebook.com"/>
       <WhoAmI name="Alex" surname="Shepard" link="twitter.com"/>
      <Header/> 
