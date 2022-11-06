@@ -110,6 +110,41 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+
+8 kyu Training JS #9: loop statement --while and do..while
+
+function padIt(str,n){
+while (n > 0){
+  if (n%2 !== 0) 
+  {str = '*' + str}
+  else {
+    str =  str + '*'
+  }
+  n--
+}
+  return str
+}
+
+8 kyu Power
+
+const numberToPower = (number, power) => power > 0 ? number*numberToPower(number, power - 1 ) : 1
+
+8 kyu Object Oriented Piracy
+
+function Ship(draft,crew) {
+ this.draft = draft;
+ this.crew = crew;
+  this.isWorthIt = () => (
+    this.draft - this.crew * 1.5 > 20
+  )
+}
+
+8 kyu Regular Ball Super Ball
+
+var Ball = function(ballType) {
+  this.ballType = ballType || 'regular'
+  }
+
 7 kyu Balanced Number (Special Numbers Series #1 )
 
 function balancedNum(number)
