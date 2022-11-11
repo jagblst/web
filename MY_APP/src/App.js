@@ -10,15 +10,21 @@ function reducer (state, action) {
             return {autoplay: 300};
         case 'fast': 
             return {autoplay: 700};
+        case 'custom':
+            return {autoplay: action.payload};    
         default:
             throw new Error();            
     }
 }
 
-const Slider = () => {
+function init(initial) {
+    return {autoplay: initial}
+}
+
+const Slider = ({initial}) => {
      const [slide, setSlide] = useState(0);
     // const [autoplay, setAutoplay] = useState(false);
-    const [autoplay, dispatch] = useReducer(reducer, false);
+    const [autoplay, dispatch] = useReducer(reducer, initial, init);
   
     function changeSlide(i) {
         setSlide(slide => slide + i);
@@ -44,7 +50,10 @@ const Slider = () => {
                         onClick={() => dispatch({type: 'slow'})}>slow autoplay</button>
                     <button 
                         className="btn btn-primary me-2"
-                        onClick={() => dispatch({type: 'fast'})}>fast autoplay</button>    
+                        onClick={() => dispatch({type: 'fast'})}>fast autoplay</button> 
+                    <button 
+                        className="btn btn-primary me-2"
+                        onClick={(e) => dispatch({type: 'custom', payload: +e.target.textContent})}>1000</button>        
                 </div>
             </div>
         </Container>
@@ -53,7 +62,7 @@ const Slider = () => {
 
 function App() {
   return (
-   <Slider/>
+   <Slider initial={false}/>
   );
 }
 
