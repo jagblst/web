@@ -1,4 +1,6 @@
 import {connect} from 'react-redux';
+import {inc, dec, rnd} from '../actions';
+import {bindActionCreators} from 'redux';
 
 const Counter = ({counter, inc, dec, rnd}) => {
     return (
@@ -17,4 +19,15 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps)(Counter);
+const mapDispatchToProps = (dispatch) => {
+    return {
+        inc: () => dispatch(inc()),
+        dec: () => dispatch(dec()),
+        rnd: () => {
+            const value = Math.floor(Math.random() * 10);
+            dispatch(rnd(value));
+        }    
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Counter);
