@@ -1,3 +1,4 @@
+import {connect} from 'react-redux';
 
 const Counter = ({counter, inc, dec, rnd}) => {
     return (
@@ -10,4 +11,10 @@ const Counter = ({counter, inc, dec, rnd}) => {
     )
 }
 
-export default Counter;
+const mapStateToProps = (state) => {
+    return{
+        counter: state.value
+    }
+}
+
+export default connect(mapStateToProps)(Counter);
