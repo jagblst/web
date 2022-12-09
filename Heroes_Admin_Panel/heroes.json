@@ -1,49 +1,73 @@
 {
-    "heroes": [
-      {
-        "id": 1,
-        "name": "Первый герой",
-        "description": "Первый герой в рейтинге!",
-        "element": "fire"
-      },
-      {
-        "id": 2,
-        "name": "Неизвестный герой",
-        "description": "Скрывающийся в тени",
-        "element": "wind"
-      },
-      {
-        "id": 3,
-        "name": "Морской герой",
-        "description": "Как аквамен, но не из DC",
-        "element": "water"
-      }
-    ],
-    "filters": [
-      {
-        "name": "all",
-        "label": "Все",
-        "className": "btn-outline-dark"
-      },
-      {
-        "name": "fire",
-        "label": "Огонь",
-        "className": "btn-danger"
-      },
-      {
-        "name": "water",
-        "label": "Вода",
-        "className": "btn-primary"
-      },
-      {
-        "name": "wind",
-        "label": "Ветер",
-        "className": "btn-success"
-      },
-      {
-        "name": "earth",
-        "label": "Земля",
-        "className": "btn-secondary"
-      }
-    ]
-  }
+  "heroes": [
+    {
+      "id": 1,
+      "name": "Первый герой",
+      "description": "Первый герой в рейтинге!",
+      "element": "fire"
+    },
+    {
+      "id": 2,
+      "name": "Неизвестный герой",
+      "description": "Скрывающийся в тени",
+      "element": "wind"
+    },
+    {
+      "id": 3,
+      "name": "Морской герой",
+      "description": "Как аквамен, но не из DC",
+      "element": "water"
+    },
+    {
+      "id": "785f9b9f-9d43-4404-a6d0-3814d8a58d1c",
+      "name": "Александр",
+      "description": "ggggg",
+      "element": "earth"
+    },
+    {
+      "id": "9e304e17-a953-45bf-8b85-8c3d4e025d15",
+      "name": "ololo",
+      "description": "ololo",
+      "element": "fire"
+    },
+    {
+      "id": "1e42c459-e28a-469c-bc74-33f46d200a23",
+      "name": "hhhh",
+      "description": "ngfhgfh",
+      "element": "wind"
+    },
+    {
+      "id": "06a0b241-f2bc-448f-a72f-29dc042c294a",
+      "name": "aaaaa",
+      "description": "l",
+      "element": "water"
+    }
+  ],
+  "filters": [
+    {
+      "name": "all",
+      "label": "Все",
+      "className": "btn-outline-dark"
+    },
+    {
+      "name": "fire",
+      "label": "Огонь",
+      "className": "btn-danger"
+    },
+    {
+      "name": "water",
+      "label": "Вода",
+      "className": "btn-primary"
+    },
+    {
+      "name": "wind",
+      "label": "Ветер",
+      "className": "btn-success"
+    },
+    {
+      "name": "earth",
+      "label": "Земля",
+      "className": "btn-secondary"
+    }
+  ]
+}
