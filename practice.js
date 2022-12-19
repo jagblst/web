@@ -110,6 +110,11 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+8 kyu Template Strings
+
+var TempleStrings = function(obj, feature) {
+  return `${obj} are ${feature}`
+}
 
 8 kyu Training JS #9: loop statement --while and do..while
 
