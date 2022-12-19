@@ -110,6 +110,12 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+7 kyu esreveR
+
+reverse = function(array) {
+return array.map((item,idx) => array[array.length-1-idx])
+}
+
 8 kyu Template Strings
 
 var TempleStrings = function(obj, feature) {
