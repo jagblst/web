@@ -110,6 +110,12 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+8 kyu Grasshopper - Order of operations
+
+function orderOperations () {
+  return (2 + 2) * (2 + 2) * 2
+}
+
 8 kyu Who ate the cookie?
 
 function cookie(x){
