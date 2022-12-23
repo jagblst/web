@@ -110,6 +110,14 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+8 kyu Who ate the cookie?
+
+function cookie(x){
+if (x === Number(x)) return "Who ate the last cookie? It was Monica!"
+  if (x === String(x)) return "Who ate the last cookie? It was Zach!"
+    return "Who ate the last cookie? It was the dog!"
+}
+
 7 kyu esreveR
 
 reverse = function(array) {
