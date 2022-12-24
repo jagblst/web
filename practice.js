@@ -110,6 +110,12 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+8 kyu Area of a Square
+
+function squareArea(A){
+  return Math.pow(2*A/Math.PI, 2)
+}
+
 8 kyu Grasshopper - Order of operations
 
 function orderOperations () {
