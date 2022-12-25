@@ -110,6 +110,24 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+6 kyu The Vowel Code
+
+function encode(string) {
+  return string.replace(/a/g, '1')
+               .replace(/e/g, '2')
+               .replace(/i/g, '3')
+               .replace(/o/g, '4')
+               .replace(/u/g, '5')
+}
+
+function decode(string) {
+  return string.replace(/1/, 'a')
+               .replace(/2/, 'e')
+               .replace(/3/, 'i')
+               .replace(/4/, 'o')
+               .replace(/5/, 'u')
+}
+
 8 kyu Area of a Square
 
 function squareArea(A){
