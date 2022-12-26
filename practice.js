@@ -110,6 +110,12 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+7 kyu Small enough? - Beginner
+
+function smallEnough(a, limit){
+return a.every(e => e <= limit) 
+}
+
 6 kyu The Vowel Code
 
 function encode(string) {
