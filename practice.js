@@ -110,6 +110,16 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+7 kyu Folding your way to the moon
+
+function foldTo(distance) {
+  if (distance < 0) return null
+  let counter = 0;
+  for (let i = 0.0001; i <= distance; i *= 2) 
+    counter += 1;
+  return counter 
+}
+
 7 kyu Small enough? - Beginner
 
 function smallEnough(a, limit){
