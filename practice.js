@@ -110,6 +110,15 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+7 kyu Build a square
+
+function generateShape(integer){
+  let res = []
+  for (let i = 1; i <= integer; i++)
+    res.push('+'.repeat(integer))
+return res.join('\n')
+}
+
 7 kyu Folding your way to the moon
 
 function foldTo(distance) {
