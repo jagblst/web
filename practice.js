@@ -110,6 +110,14 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+7 kyu Functional Addition
+
+function add(n) {
+  return function(m) {
+    return n + m
+  }
+}
+
 7 kyu Build a square
 
 function generateShape(integer){
