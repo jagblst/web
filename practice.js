@@ -110,6 +110,20 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+8 kyu Polish alphabet
+
+function correctPolishLetters (string) {
+  return string.replace(/ą/gi, 'a')
+               .replace(/ć/gi, 'c')
+               .replace(/ę/gi, 'e')
+               .replace(/ł/gi, 'l')
+               .replace(/ń/gi, 'n')
+               .replace(/ó/gi, 'o')
+               .replace(/ś/gi, 's')
+               .replace(/ź/gi, 'z')
+               .replace(/ż/gi, 'z')
+            }
+
 7 kyu Filter the number
 
 var filterString = function(value) {
