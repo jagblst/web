@@ -110,6 +110,12 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+7 kyu Filter the number
+
+var filterString = function(value) {
+ return +value.match(/\d/gm).join('')
+}
+
 7 kyu Functional Addition
 
 function add(n) {
