@@ -110,6 +110,13 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+
+7 kyu Automorphic Number (Special Numbers Series #6)
+
+function automorphic(n){
+return (n*n).toString().endsWith(String(n)) ? "Automorphic" : 'Not!!'
+}
+
 8 kyu Polish alphabet
 
 function correctPolishLetters (string) {
