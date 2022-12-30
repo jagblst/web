@@ -110,6 +110,11 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+8 kyu Color Ghost
+
+var Ghost = function() {
+this.color = ["white", "yellow", "purple", "red"][Math.floor(Math.random() * 4)];
+};
 
 7 kyu Automorphic Number (Special Numbers Series #6)
 
