@@ -110,6 +110,22 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+8 kyu Grasshopper - Bug Squashing
+
+var health = 100
+var position = 0
+var coins = 0
+
+function main () {
+   rollDice()
+    move()
+  combat()
+  getCoins()
+ buyHealth()
+  printStatus()
+ 
+}
+
 8 kyu Color Ghost
 
 var Ghost = function() {
