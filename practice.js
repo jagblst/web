@@ -110,6 +110,12 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+8 kyu Freudian translator
+
+function toFreud(string) {
+  return string.length === 0 ? '' : string.split(' ').map(e => 'sex').join(' ')
+}
+
 8 kyu Grasshopper - Bug Squashing
 
 var health = 100
