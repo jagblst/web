@@ -13,40 +13,39 @@
       "element": "wind"
     },
     {
-      "id": "0bf03215-29ec-44e7-90c5-2867e5486cb3",
-      "name": "Александр",
-      "description": "mkok",
+      "id": 3,
+      "name": "Морской герой",
+      "description": "Как аквамен, но не из DC",
       "element": "water"
-    },
-    {
-      "id": "9784cc8d-ff71-4955-9262-0bef1bfe2471",
-      "name": "Олекса",
-      "description": "kokok",
-      "element": "earth"
     }
   ],
   "filters": [
     {
+      "id": "all",
       "name": "all",
       "label": "Все",
       "className": "btn-outline-dark"
     },
     {
+      "id": "fire",
       "name": "fire",
       "label": "Огонь",
       "className": "btn-danger"
     },
     {
+      "id": "water",
       "name": "water",
       "label": "Вода",
       "className": "btn-primary"
     },
     {
+      "id": "wind",
       "name": "wind",
       "label": "Ветер",
       "className": "btn-success"
     },
     {
+      "id": "earth",
       "name": "earth",
       "label": "Земля",
       "className": "btn-secondary"
