@@ -110,6 +110,22 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+7 kyu Odd-Even String Sort 
+
+function sortMyString(S) {
+  let odd = ''
+  let even = ''
+  for (let i in S){
+    if (i % 2 == 0) {
+      even += S[i]
+    }
+    if (i % 2 != 0) {
+     odd += S[i]
+    }
+  }
+    return `${even} ${odd}`
+}
+
 8 kyu Training JS #12: loop statement --for..in and for..of
 
 function giveMeFive(obj){
