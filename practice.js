@@ -110,6 +110,12 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+8 kyu Compare within margin
+
+function closeCompare(a, b, margin){
+ return  Math.abs(a - b) <= margin ? 0 : Math.sign(a - b)
+}
+
 7 kyu Odd-Even String Sort 
 
 function sortMyString(S) {
