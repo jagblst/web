@@ -110,6 +110,21 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+8 kyu Training JS #12: loop statement --for..in and for..of
+
+function giveMeFive(obj){
+  let arr = []
+   for (let key in obj){
+   if (key.length == 5) {
+     arr.push(key)
+   }
+     if (obj[key].length == 5) {
+     arr.push(obj[key])
+    }
+  }
+  return arr
+}
+
 8 kyu Training JS #11: loop statement --break,continue
 
 function grabDoll(dolls){
