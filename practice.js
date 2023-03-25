@@ -110,6 +110,20 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+7 kyu Factorial
+
+function factorial(n)
+{ 
+  if (n < 0 || n > 12) {
+    throw error
+  } else if (n < 1) {
+    return 1
+  } else {
+    return n * factorial(n - 1)
+  }
+
+}
+
 8 kyu Compare within margin
 
 function closeCompare(a, b, margin){
