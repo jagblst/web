@@ -110,6 +110,12 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+7 kyu Recursion #1 - Factorial
+
+const factorial = n => {
+  return n < 1 ? 1 : n * (factorial(n - 1));
+};
+
 8 kyu Grasshopper - Terminal Game #1
 
 function Hero (name) {
