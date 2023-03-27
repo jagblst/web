@@ -110,6 +110,17 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+8 kyu Grasshopper - Terminal Game #1
+
+function Hero (name) {
+  this.name = name || 'Hero';
+  this.position = '00';
+  this.health	= 100;
+  this.damage =	5;
+  this.experience = 0;
+  
+}
+
 7 kyu Help the Fruit Guy
 
 function removeRotten(bagOfFruits){
