@@ -110,6 +110,24 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+7 kyu Help the Fruit Guy
+
+function removeRotten(bagOfFruits){
+  let fresh = [];
+  if (bagOfFruits) {
+    for (let i = 0; i < bagOfFruits.length; i++){
+    if (bagOfFruits[i].slice(0, 6) == 'rotten'){
+      fresh.push(bagOfFruits[i].slice(6).toLowerCase());
+    } else {
+      fresh.push(bagOfFruits[i]);
+    }
+  }
+  return fresh;
+  } else {
+    return [];
+  }
+}
+
 7 kyu Factorial
 
 function factorial(n)
