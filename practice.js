@@ -110,6 +110,12 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+8 kyu Are arrow functions odd?
+
+function odds(values){
+  return values.filter(e => e % 2 !== 0);
+}
+
 7 kyu Find the nth Digit of a Number
 
 var findDigit = function(num, nth){
