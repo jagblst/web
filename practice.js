@@ -110,6 +110,12 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+8 kyu Pick a set of first elements
+
+function first(arr, n) {
+ return n !== undefined ? arr.slice(0, n) : arr.slice(0, 1);
+}
+
 7 kyu Recursion #1 - Factorial
 
 const factorial = n => {
