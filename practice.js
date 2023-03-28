@@ -110,6 +110,14 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+7 kyu Find the nth Digit of a Number
+
+var findDigit = function(num, nth){
+  if (nth <= 0) return -1
+  let pos = String(Math.abs(num))
+  return +pos.slice(pos.length-nth, pos.length-nth+1)
+}
+
 8 kyu Pick a set of first elements
 
 function first(arr, n) {
