@@ -110,6 +110,12 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+8 kyu Simple Comparison?
+
+function add(a, b){
+  return a == b;
+}
+
 8 kyu Are arrow functions odd?
 
 function odds(values){
