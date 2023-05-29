@@ -110,6 +110,16 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+7 kyu Simple string characters
+
+function solve(s){
+  let u = (s.match(/[A-Z]/g) || []).length;
+  let l = (s.match(/[a-z]/g) || []).length;
+  let n = (s.match(/[0-9]/g) || []).length;
+  let sc = (s.match(/[^a-zA-Z0-9]/g) || []).length;
+  return [u, l, n, sc];
+}
+
 8 kyu Simple Comparison?
 
 function add(a, b){
