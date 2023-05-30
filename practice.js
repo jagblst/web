@@ -110,6 +110,12 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+7 kyu Substituting Variables Into Strings: Padded Numbers
+
+function solution(value){
+  return `Value is ${String(value).padStart(5, '0')}`
+}
+
 7 kyu Simple string characters
 
 function solve(s){
