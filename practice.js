@@ -110,6 +110,18 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+7 kyu Indexed capitalization
+
+function capitalize(s,arr){
+  let sArr = s.split('');
+  for (let idx of arr) {
+    if (sArr[idx] !== undefined) {
+     sArr[idx] = sArr[idx].toUpperCase();
+    }
+  }
+  return sArr.join('');
+};
+
 7 kyu What time is it?
 
 var getMilitaryTime = function(input) {
