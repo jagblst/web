@@ -110,6 +110,15 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+7 kyu What time is it?
+
+var getMilitaryTime = function(input) {
+  if ( input.slice(0, 2) == 12 && input.includes('AM')) return input.replace(/^12/, '00').slice(0, -2);
+  else if (input.includes('AM')) return input.slice(0, -2);
+  else if ( input.slice(0, 2) == 12 && input.includes('PM')) return input.slice(0, -2);
+  else  return `${(+(input.slice(0, 2)) + 12)}${input.slice(2, -2)}`                      
+};
+
 7 kyu Substituting Variables Into Strings: Padded Numbers
 
 function solution(value){
