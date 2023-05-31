@@ -110,6 +110,12 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+7 kyu Nth Smallest Element (Array Series #4)
+
+function nthSmallest(arr, pos){
+  return arr.sort((a, b) => a - b)[pos - 1]
+}
+
 7 kyu Indexed capitalization
 
 function capitalize(s,arr){
