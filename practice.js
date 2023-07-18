@@ -110,6 +110,12 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+6 kyu Kebabize
+
+function kebabize(str) {
+return str.replace(/[0-9]/g, '').split(/(?=[A-Z])/).join('-').toLowerCase();
+}
+
 7 kyu Nth Smallest Element (Array Series #4)
 
 function nthSmallest(arr, pos){
