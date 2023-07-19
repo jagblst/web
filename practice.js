@@ -110,6 +110,12 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+7 kyu Simple beads count
+
+function countRedBeads(n) {
+  return n < 2 ? 0 : n * 2 - 2;
+}
+
 6 kyu Kebabize
 
 function kebabize(str) {
