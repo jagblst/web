@@ -110,6 +110,12 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+7 kyu Number of Decimal Digits
+
+function digits(n) {
+ return String(n).length;
+}
+
 7 kyu Simple beads count
 
 function countRedBeads(n) {
