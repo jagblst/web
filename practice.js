@@ -110,6 +110,16 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+7 kyu Disarium Number (Special Numbers Series #3)
+
+function disariumNumber(n){
+  let res = 0;
+  for (let i = 0; i < String(n).length; i++){
+    res += (Math.pow(+String(n)[i], i + 1)); 
+  }
+ return res === n ? "Disarium !!" : "Not !!";
+}
+
 7 kyu Number of Decimal Digits
 
 function digits(n) {
