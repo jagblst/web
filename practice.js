@@ -110,6 +110,21 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+7 kyu Basic Calculator
+
+function calculate(num1, operation, num2) {
+  const operations = ['+', '-', '*', '/'];
+  if (operation === '/' && num2 === 0 || !operations.includes(operation)){
+    return null
+  }
+  switch(operation) {
+    case '+': return num1 + num2;
+    case '-': return num1 - num2;
+    case '*': return num1 * num2;
+    case '/': return num1 / num2;
+  }
+}
+
 7 kyu Disarium Number (Special Numbers Series #3)
 
 function disariumNumber(n){
