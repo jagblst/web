@@ -110,6 +110,12 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+7 kyu Spacify
+
+function spacify(str) {
+  return str.split('').join(' ');
+}
+
 7 kyu Basic Calculator
 
 function calculate(num1, operation, num2) {
