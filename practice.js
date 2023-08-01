@@ -110,6 +110,18 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+7 kyu Simple consecutive pairs
+
+function pairs(arr){
+ let count = 0;
+  for (let i = 0; i < arr.length; i += 2){
+    if(Math.abs(arr[i] - arr[i + 1]) === 1) {
+      count++;
+    }
+  }
+  return count;
+};
+
 7 kyu Spacify
 
 function spacify(str) {
