@@ -110,6 +110,18 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+8 kyu UEFA EURO 2016
+
+function uefaEuro2016(teams, scores){
+  if (scores[0] > scores[1]) {
+    return `At match ${teams[0]} - ${teams[1]}, ${teams[0]} won!`;
+  } else if (scores[0] < scores[1]) {
+    return `At match ${teams[0]} - ${teams[1]}, ${teams[1]} won!`;
+  } else {
+    return `At match ${teams[0]} - ${teams[1]}, teams played draw.`;
+  }
+}
+
 7 kyu Simple consecutive pairs
 
 function pairs(arr){
