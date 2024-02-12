@@ -110,6 +110,12 @@ console.log(some(someOfThis, (elem) => elem === "JavaS"));
 
 ==========================================CODEWARS==========================================
 
+7 kyu The old switcheroo
+
+function vowel2index(str) {
+   return str.replace(/[aeuio]/gi, (_, i) => i + 1)
+}
+
 8 kyu UEFA EURO 2016
 
 function uefaEuro2016(teams, scores){
